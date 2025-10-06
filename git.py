@@ -11,4 +11,14 @@ def clone_repo(path, url):
 clone_repo(repo_path, repo_url)
 
 
-a = 6
+def add_file(path, rname, fname):
+    os.chdir(path + "/" + rname)
+    os.system("git add " + fname)
+
+    #clone_repo(repo_path, repo_url)
+
+    file = open(repo_path + "/" + repo_name + "/" + "/qwerty.txt", "w")
+    file.write("nahoda")
+    file.close()
+    
+    
