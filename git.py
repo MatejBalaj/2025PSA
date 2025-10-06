@@ -21,4 +21,19 @@ def add_file(path, rname, fname):
     file.write("nahoda")
     file.close()
     
-    
+def commit_changes(path, rname, message):
+    os.chdir(path + "/" + rname)
+    os.system('git commit -m "' + message + '"')
+#clone_repo(repo_path, repo_url)
+
+def push_git(path, rname):
+    os.chdir(path + "/" + rname)
+    os.system("git push")
+
+#commit_changes(repo_path, repo_name, "commit from python")
+push_git(repo_path, repo_name)
+
+
+################################
+
+file = open(repo_path + "/" + repo_name)
