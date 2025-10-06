@@ -23,7 +23,7 @@ def add_file(path, rname, fname):
     
 def commit_changes(path, rname, message):
     os.chdir(path + "/" + rname)
-    os.system('git commit -m "' + message + '"')
+    os.system("git commit -m \"" + message + "\"")
 #clone_repo(repo_path, repo_url)
 
 def push_git(path, rname):
