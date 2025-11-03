@@ -1,9 +1,9 @@
-# def vyhod_medzery(text):
-#     retazec = ""
-#     for c in text:
-#         if c!=" ":
-#             retazec += c
-#     return retazec
+def vyhod_medzery(text):
+     retazec = ""
+     for c in text:
+         if c!=" ":
+             retazec += c
+     return retazec
 
 def vyhod_medzery2(text):
     return text.replace(" ", "")
