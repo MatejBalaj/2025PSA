@@ -1,6 +1,8 @@
-"""
-ULOHY
-2 tyzden
-"""
-#uloha1
-pi = 3.14159
+a = 1
+b = 0
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+print(a, b)
+
