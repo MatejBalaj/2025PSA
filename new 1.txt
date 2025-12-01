@@ -1,0 +1,5 @@
+158.193.152.248 -MikroTik
+158.193.152.223 -Cisco
+heslo : admin admin
+
+pip install paramiko netmiko 
