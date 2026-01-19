@@ -1,0 +1,18 @@
+import os
+import subprocess as sub
+
+cesta = "c:\\Users\\matej\\Desktop"
+nazov_repozitara = "2025PSA"
+#adresa_repozitara = "https://github.com/MatejBalaj/2025PSA.git"
+
+def spust():
+    os.chdir(cesta + "\\" + nazov_repozitara)
+    kontrola = sub.check_output(["git", "status", "--porcelain"], text=True)
+
+    upraveny = []
+    for riadok in kontrola.splitlines():
+        if len(riadok) > 0 and riadok[:2] in ("??"," M"):
+            upraveny.append(riadok)
+    print(upraveny)
+
+spust()
